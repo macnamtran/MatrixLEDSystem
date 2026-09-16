@@ -45,7 +45,7 @@ void setup() {
 
   config.xclk_freq_hz = 20000000;
 
-  // RGB888 gives direct R, G, B values for each pixel.
+  // RGB565 stores each pixel in two bytes; loop() expands the channels.
   config.pixel_format = PIXFORMAT_RGB565;
   config.frame_size = FRAMESIZE_QQVGA;  // 160 × 120
 
